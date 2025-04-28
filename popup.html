@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlight Open Links</title>
+  <style>
+    body {
+      width: 220px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    #refreshTabs {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <span class="toggle-label">Extension is:</span>
+    <label class="switch">
+      <input type="checkbox" id="toggleSwitch">
+    </label>
+  </div>
+
+  <button id="refreshTabs">🔄 Refresh All Tabs</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
